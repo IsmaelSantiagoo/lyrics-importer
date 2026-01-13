@@ -1,29 +1,15 @@
-# Dependencies
-node_modules/
-vendor/
-
-# Build outputs
-dist/
+# Arquivos de build e metadados do Python
+*.egg-info/
 build/
-*.log
-
-# IDE and editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Environment variables
-.env
-.env
-.env.local
-
-# Python cache
+dist/
 __pycache__/
 *.py[cod]
-*$py.class
+
+# Ambiente Virtual
+venv/
+.venv/
+
+# Logs e arquivos do sistema
+*.log
+.DS_Store (se estiver no Mac)
+
