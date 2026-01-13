@@ -7,5 +7,5 @@ def resource_path(relative_path):
         # PyInstaller extrai arquivos para pasta temporária _MEIPASS
         base_path = Path(sys._MEIPASS)
     else:
-        base_path = Path(__file__).parent
+        base_path = Path(__file__).parent.parent
     return base_path / relative_path

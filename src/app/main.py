@@ -20,7 +20,7 @@ logging.basicConfig(
 )
 
 # Abre a imagem
-icon_image = Image.open(resource_path("icon.ico"))
+icon_image = Image.open(resource_path("assets/icon.ico"))
 
 # instanciar app Flask
 app = Flask(__name__)
