@@ -3,6 +3,8 @@ import traceback
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 
+from logic import importar_letra
+
 # instanciar app Flask
 app = Flask(__name__)
 # configurar CORS
@@ -18,6 +20,9 @@ def importar():
   try:
     # extrair URL da música
     url = data.get("url")
+
+    # iniciar processo de importação
+    importar_letra(url)
 
     return jsonify({ "status": "ok" })
   except Exception as e:
